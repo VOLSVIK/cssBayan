@@ -1,0 +1,11 @@
+body {
+    width: 70%;
+    margin: 0 auto;
+    padding: 4%;
+  }
+
+  .bayanTitle {
+    margin-left: 2vw;
+    font-size: 1.7em;
+    font-weight: 700;
+  }
