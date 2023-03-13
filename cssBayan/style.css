@@ -1,0 +1,199 @@
+body {
+    width: 70%;
+    margin: 0 auto;
+    padding: 4%;
+  }
+
+  .bayanContent {
+    width: 100%;
+    /* cursor: none; */
+  }
+
+  .bayanTitle {
+    margin-left: 2vw;
+    font-size: 1.7em;
+    font-weight: 700;
+  }
+
+.memeTitle {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    transition: .5s;
+}
+
+.memeText {
+    margin-left: 2vw;
+    color: rgb(4, 123, 251);
+}
+
+.memeArrow {
+    opacity: 1;
+    color:black;
+    margin-right: 2vw;
+    transition: .5s;
+    transform-origin: 25% 75%;
+    transform: rotate(270deg);
+}
+
+.memeLine {
+    width: 97%;
+    margin: 0.5vh;
+    border: solid 0.1vh rgb(174, 174, 174);
+ }
+
+.memePicture01 {
+    width: 0%;
+    height: 0%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .5s;
+}
+
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 700;
+    /* cursor: none; */
+    color: rgb(4, 123, 251);
+    transition: .5s;
+}
+
+
+.bayanContent label:active .memeText{
+    color: rgb(4, 123, 251);
+}
+
+.bayanContent label:active .memePicture01{
+    transform: scale(0.9);
+    width: 40%;
+    height: 40%;
+}
+
+.bayanContent label:active{
+    opacity: .7;
+}
+
+.bayanContent input{
+    display: none;
+}
+
+.bayanContent input:checked + label .memeText{
+    color: black;
+}
+
+.bayanContent input:checked + label .memeArrow{
+    color: black;
+    transform-origin: 35% 35%;
+    transform: rotate(90deg);
+}
+
+.bayanContent input:checked + label .memePicture01 {
+    width: 70%;
+    height: 70%;
+    transform: scale(0.9);
+    box-shadow: 0 1em 2em rgb(147, 147, 147);
+}
+
+@media (min-width: 820px) {
+   
+
+    .bayanContent {
+        cursor: pointer;
+    }
+    .memeArrow {
+        opacity: 0;
+    }
+
+    .bayanContent:hover .memeArrow{
+        opacity: 1;
+    }
+    
+    .bayanContent:hover .memeText{
+        color: black;
+    }
+    
+    .bayanContent:hover .memeTitle{
+        box-shadow: 0 0.5em 1em rgb(174, 174, 174);
+    }
+
+
+    .bayanContent label:hover .memeArrow{
+        transform-origin: 35% 35%;
+        transform: rotate(90deg);
+    }
+    
+    .bayanContent label:hover .memePicture01{
+        transform: scale(0.9);
+        width: 40%;
+        height: 40%;
+    }
+    
+    .bayanContent label:active .memeArrow{
+        transform-origin: 35% 35%;
+        transform: rotate(90deg);
+        color: rgb(4, 123, 251);
+    }
+
+.bayanTitle {
+    font-size: 3.4em;
+}
+
+label {
+    font-size: 1.7em;
+    cursor: pointer;
+}
+
+.bayanContent:hover .memeTitle{
+    box-shadow: 0 0.7em 1.4em rgb(174, 174, 174);
+}
+
+.bayanContent input:checked + label .memePicture01 {
+    box-shadow: 0 1.4em 3em rgb(147, 147, 147);
+}
+}
+
+@media (min-width: 1400px) {
+
+.bayanTitle {
+    font-size: 7em;
+}
+
+label {
+    font-size: 3.4em;
+
+}
+
+.bayanContent:hover .memeTitle{
+    box-shadow: 0 1.4em 3em rgb(174, 174, 174);
+}
+
+.bayanContent input:checked + label .memePicture01 {
+    box-shadow: 0 3em 5em rgb(147, 147, 147);
+}
+}
+
+@media (min-width: 1920px) {
+   
+.bayanTitle {
+    font-size: 7vh;
+}
+
+label {
+    font-size: 4vh;
+}
+
+.bayanContent:hover .memeTitle{
+    box-shadow: 0 1vh 2vw rgb(174, 174, 174);
+}
+
+.bayanContent input:checked + label .memePicture01 {
+    box-shadow: 0 2vh 4vw rgb(147, 147, 147);
+}
+}
