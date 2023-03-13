@@ -6,7 +6,7 @@ body {
 
   .bayanContent {
     width: 100%;
-    cursor: none;
+    /* cursor: none; */
   }
 
   .bayanTitle {
@@ -51,17 +51,6 @@ body {
     transition: .5s;
 }
 
-.bayanContent:hover .memeArrow{
-    opacity: 1;
-}
-
-.bayanContent:hover .memeText{
-    color: black;
-}
-
-.bayanContent:hover .memeTitle{
-    box-shadow: 0 0.5em 1em rgb(174, 174, 174);
-}
 
 label {
     display: flex;
@@ -71,27 +60,11 @@ label {
     width: 100%;
     font-size: 1em;
     font-weight: 700;
-    cursor: none;
+    /* cursor: none; */
     color: rgb(4, 123, 251);
     transition: .5s;
 }
 
-.bayanContent label:hover .memeArrow{
-    transform-origin: 35% 35%;
-    transform: rotate(90deg);
-}
-
-.bayanContent label:hover .memePicture01{
-    transform: scale(0.9);
-    width: 40%;
-    height: 40%;
-}
-
-.bayanContent label:active .memeArrow{
-    transform-origin: 35% 35%;
-    transform: rotate(90deg);
-    color: rgb(4, 123, 251);
-}
 
 .bayanContent label:active .memeText{
     color: rgb(4, 123, 251);
@@ -130,12 +103,48 @@ label {
 
 @media (min-width: 820px) {
    
+
+    .bayanContent {
+        cursor: pointer;
+    }
+
+    .bayanContent:hover .memeArrow{
+        opacity: 1;
+    }
+    
+    .bayanContent:hover .memeText{
+        color: black;
+    }
+    
+    .bayanContent:hover .memeTitle{
+        box-shadow: 0 0.5em 1em rgb(174, 174, 174);
+    }
+
+
+    .bayanContent label:hover .memeArrow{
+        transform-origin: 35% 35%;
+        transform: rotate(90deg);
+    }
+    
+    .bayanContent label:hover .memePicture01{
+        transform: scale(0.9);
+        width: 40%;
+        height: 40%;
+    }
+    
+    .bayanContent label:active .memeArrow{
+        transform-origin: 35% 35%;
+        transform: rotate(90deg);
+        color: rgb(4, 123, 251);
+    }
+
 .bayanTitle {
     font-size: 3.4em;
 }
 
 label {
     font-size: 1.7em;
+    cursor: pointer;
 }
 
 .bayanContent:hover .memeTitle{
@@ -159,7 +168,7 @@ label {
 
 label {
     font-size: 3.4em;
-    cursor: pointer;
+
 }
 
 .bayanContent:hover .memeTitle{
