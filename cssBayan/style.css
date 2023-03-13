@@ -28,7 +28,7 @@ body {
 }
 
 .memeArrow {
-    opacity: 0;
+    opacity: 1;
     color:black;
     margin-right: 2vw;
     transition: .5s;
@@ -107,6 +107,9 @@ label {
     .bayanContent {
         cursor: pointer;
     }
+    .memeArrow {
+        opacity: 0;
+    }
 
     .bayanContent:hover .memeArrow{
         opacity: 1;
@@ -157,10 +160,6 @@ label {
 }
 
 @media (min-width: 1400px) {
-
-.bayanContent {
-    cursor: pointer;
-}
 
 .bayanTitle {
     font-size: 7em;
